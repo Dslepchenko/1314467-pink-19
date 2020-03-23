@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Слепченко](https://up.htmlacademy.ru/adaptive/19/user/1314467).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Железцов`.
 
 ---
 
