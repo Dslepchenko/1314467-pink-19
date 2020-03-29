@@ -11,17 +11,17 @@
     <div class="page-header">
       <nav class="header-nav">
         <div class="header-nav-logo-wrapper">
-          <a class="#header-logo" label="логотип сайта " Pink"">
-            <img src="https://via.placeholder.com/150x150">
+          <a class="#header-logo" aria-label="логотип сайта Pink">
+            <img src="https://via.placeholder.com/150x150" alt="1">
           </a>
-          <button class="header-nav-toggle" type="button" label="Меню"></button>
+          <button class="header-nav-toggle" type="button" aria-label="Меню"></button>
           <!--Главное меню-->
           <ul class="main-menu">
             <li class="main-menu__item">
-              <a class="#header-logo" label="логотип сайта " Pink"">
-                <img src="https://via.placeholder.com/150x150">
+              <a class="#header-logo" aria-label="логотип сайта  Pink">
+                <img src="https://via.placeholder.com/150x150" alt="2">
               </a>
-              <button class="header-nav-close" type="button" label="Меню-закрыть"></button>
+              <button class="header-nav-close" type="button" aria-label="Меню-закрыть"></button>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="#index.html">Главная</a>
@@ -35,8 +35,11 @@
             <li class="main-menu__item">
               <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
+          </ul>
         </div>
       </nav>
+      </div>
+
       <div class="page-header__store store">
         <div class="store__content">
           <p class="store__title">Взгляните на жизнь иначе!</p>
@@ -47,17 +50,17 @@
           <ul class="store__list">
             <li class="store__item">
               <a class="store__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="iOS">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="3">
               </a>
             </li>
             <li class="store__item">
               <a class="store__link" href="https://play.google.com/store" aria-label="Android">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="4">
               </a>
             </li>
             <li class="store__item">
               <a class="store__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Windows">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="5">
               </a>
             </li>
           </ul>
@@ -66,8 +69,6 @@
         </div>
       </div>
   </header>
-
-
   <!--содержимое мэйна-->
   <main class="page-main">
     <div class="page-main__titles">
@@ -95,7 +96,46 @@
             новых</p>
         </li>
       </ul>
-    </section>
-</body>
+      </section>
+        <section class="reviews">
+    <h2 class="visually-hidden">Отзывы пользователей</h2>
 
+    <div class="slider  reviews__slider">
+
+      <div class="slider__togglers">
+        <button class="slider__toggler  slider__toggler--prev  button-image  button-image--arrow" type="button" disabled>
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+
+        <button class="slider__toggler  slider__toggler--next  button-image  button-image--arrow" type="button">
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
+      </div>
+
+      <div class="slider__overflow-wrap">
+
+        <div class="reviews__list  slider__inner">
+          <blockquote class="reviews__item  slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+            <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </blockquote>
+        </div>
+          <div class="slider__controls">
+          <button class="slider__control  slider__control--active" type="button">
+            <span>1</span>
+          </button>
+          <button class="slider__control" type="button">
+            <span>2</span>
+          </button>
+          <button class="slider__control" type="button">
+            <span>3</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+</body>
 </html>
